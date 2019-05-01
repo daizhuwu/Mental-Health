@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mental Health | College Edition</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css2/second.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <!-- mental health -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Gudea" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Gudea|Montserrat" rel="stylesheet">
+        <!-- bg words -->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
+        <!-- bold title words -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+        <!-- regular text -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <!-- map  -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+
+    </head>
+    <style>
+        /* bg header words */
+        @font-face { 
+            font-family: 'Work Sans', sans-serif;
+            src:url(font/WorkSans-Thin.ttf);
+        }
+        /* mental health title */
+        @font-face{
+            font-family: 'Montserrat', sans-serif;
+            src:url(font/Montserrat-Black.ttf);
+        }
+        /* bold title fonts */
+        @font-face{
+            font-family: 'Roboto', sans-serif;
+            src:url(font/Roboto-Black.ttf);
+        }
+        /* regular text */
+        @font-face{
+            font-family: 'Raleway', sans-serif;
+            src:url(font/Raleway-Medium.ttf;
+        }
+    </style>
+
+    <body>
+        <header>
+            <div id="grid-container">
+                <div class="box a1">overwhelm</div>
+                <div class="box b1">sorrow</div>
+                <div class="box c1">depression</div>
+
+                <div class="box a2">mental</div>
+                <div class="box b2">desperate</div>
+                <div class="box c2">paranoia</div>
+                <div class="box d2">sad</div>
+
+                <div class="box a3">fear</div>
+                <div class="box b3">unempoyment</div>
+                <div class="box c3">exhausion</div>
+
+                <div class="box a4">desperate</div>
+                <div class="box b4">down</div>
+                <div class="box c4">nervousness</div>
+
+                <div class="box a5">panicking</div>
+                <div class="box b5">insecurity</div>
+                <div class="box c5">sad</div>
+
+                <div class="box a6">suicidal</div>
+                <div class="box b6">sorrow</div>
+                <div class="box c6">irritating</div>
+
+                <div class="box a7">frustration</div>
+                <div class="box b7">afraid</div>
+                <div class="box c7">pressure</div>
+
+                <div class="box a8">apprehensive</div>
+                <div class="box b8">pain</div>
+                <div class="box c8">trauma</div>
+
+                <div class="box a9">desperate</div>
+                <div class="box b9">down</div>
+                <div class="box c9">nervousness</div>
+            </div>
+
+            <div id="title">
+                <p>MENTAL HEALTH</p>
+            </div>
+        </header>
+
+    <div id="data-container">
+        <div id="data-left">
+            <h3>Data.</h3>
+        </div>
+
+    <div id="data-right">
+        <div id="data-title">Mental health problems are prevalent.</div>
+            <div id="data-box">
+                <div class="datas" id="data1"><span id="one-in-four">1/4</span> young adults between the ages of 18 and 24 have a diagnosable mental illness.</div>
+                <div class="datas" id="data2"><span id="tf">25</span> % of college students have been diagnosed or treated for a mental health condition within the past year.</div>
+                <div class="datas" id="data3"><span id="f">40</span> % of college students have felt more than an average amount of stress within the past 12 months.</div>
+                <div class="datas" id="data4"><span id="e">80</span>%  of college students felt overwhelmed in the past year and 45% have felt things were hopeless.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="passion-container">   
+        <div id="marquee-left">
+            <h3>Passion.</h3>
+        </div> 
+        <div id="marquee-right">
+            <!-- <div class="row">
+                <div id="p1-1">You can do this! You can do this!</div>
+                <div class="part2" id="p1-2">You can do this! You can do this!</div>
+            </div> -->
+            <div id="marquee-title">Find your passion and pursue it.</div>
+            <div class="row">
+                <div id="p2-1">You can do this! You can do this!</div>
+                <div class="part2" id="p2-2">You can do this! You can do this!</div>
+            </div>
+            <div class="row">
+                <div id="p3-1">You can do this! You can do this!</div>
+                <div class="part2" id="p3-2">You can do this! You can do this!</div>
+            </div>
+            <div class="row">
+                <div id="p4-1">You can do this! You can do this!</div>
+                <div class="part2" id="p4-2">You can do this! You can do this!</div>
+            </div>
+            <div class="row">
+                <div id="p5-1">You can do this! You can do this!</div>
+                <div class="part2" id="p5-2">You can do this! You can do this!</div>
+            </div>
+            <div class="row">
+                <div id="p6-1">You can do this! You can do this!</div>
+                <div class="part2" id="p6-2">You can do this! You can do this!</div>
+            </div>
+            <div class="row">
+                <div id="p7-1">You can do this! You can do this!</div>
+                <div class="part2" id="p7-2">You can do this! You can do this!</div>
+            </div>
+            <!-- <div class="row">
+                <div id="p8-1">You can do this! You can do this!</div>
+                <div class="part2" id="p8-2">You can do this! You can do this!</div>
+            </div> -->
+
+            <div id="overlay-passion">
+                <!-- <div class="titleBox">Passion</div> -->
+                <div class="passionBox">Find anything you love to do. If you do not know what your thing is, do not worry. College is a great place to sample different interests and find what works for you.</div>
+                <div class="passionBox">Just do something, and then put your heart and love behind it. Whatever you choose to pursue will return the love tenfold with positive change for your mental wellness.</div>
+                <!-- <div class="titleBox">Pursue</div> -->
+            </div>
+        </div>
+    </div>
+
+        <div id="breath-container">
+            <div id="breath-left">
+                <h3>Deep Breath.</h3>
+                <p>Time Yourself <i class="arrow right"> </i></p>
+            </div>
+            <div id="breath-right">
+                <div id="breath-header">The best way </br>to calm anxiety </br> is to breathe deeply.</div>
+                <div id="breath-instruc">
+                    <p>Breathe in for 5 seconds</p>
+                    <p>Hold it for 2 seconds</p>
+                    <p>Breathe out for 7 seconds</p>
+                </div>
+
+<!-- the following three breath boxes do not come in order because the default overlay order: what comes after is in the back -->
+                <div id="breathout" class="breath-boards">
+                        <p>Breathe out</p>
+                        <div id="innerbox3">
+                            <div id="number3">0</div>
+                            <div id="btn3">
+                                <button id="start-btn-3">Start</button>
+                                <button id="stop-btn-3">Stop</button>
+                                <button id="reset-btn-3">Reset</button>
+                            </div>
+                        </div> 
+                    </div>
+
+                <div id="hold" class="breath-boards">
+                    <p>Hold</p>  
+                    <div id="innerbox2">
+                        <div id="number2">0</div>
+                        <div id="btn2">
+                            <button id="start-btn-2">Start</button>
+                            <button id="stop-btn-2">Stop</button>
+                            <button id="reset-btn-2">Reset</button>
+                        </div>
+                    </div> 
+                </div>
+
+                <div id="breathin" class="breath-boards">
+                        <p>Breathe in</p>
+                        <div id="innerbox1">
+                            <div id="number1">0</div>
+                            <div id="btn1">
+                                <button id="start-btn-1">Start</button>
+                                <button id="stop-btn-1">Stop</button>
+                                <button id="reset-btn-1">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+
+                <div id="deco1"></div>
+                <div id="deco1-1"></div>
+                <div id="deco2"></div>
+            </div>
+        </div> <!-- breath container ends -->
+
+        <div id="open-container">
+            <div id="open-left">
+               <h3>Be open.</h3>
+            </div>
+            <div id="open-right">
+                <h3 id="open-title">Talk to someone. </br>Get out what is troubling you. </h3>
+
+                <div id="open-msg" class="open-boards">
+                    <!-- #msg1 input field -->
+                    <div id="msg1"> 
+                        <form id="stress-form">
+                            <label for="stress-item"></label>
+                            <input type="text" id="stress-item" placeholder="Type something...">
+                      
+                            <button id="add" role="button" type="submit">Add</button>
+                            <button id="delete" type="button">Delete</button>
+                          </form>
+                    </div>
+                    <!-- #msg2 list -->
+                    <div id="msg2">
+                        <table id="list">
+                            <tbody>
+                                <tr>
+                                    <!-- <td>I am sad</td> -->
+                                </tr>
+
+                            </tbody
+                        </table>
+                    </div>
+                </div>
+
+                <div id="mapid" class="open-boards">
+                    <p id="resource">USC Resources</p>
+                </div>
+                <div id="open-text" class="open-boards">
+                    <div id="text-overlay">Talk to someone about what you are going through mentally and emotionally.</div>
+                </div>
+
+                <div id="deco2-1"></div>
+                <div id="deco2-2"></div>
+
+            </div> <!-- open right contiainer ends -->
+        </div> <!-- open container ends -->
+
+        <!-- <div id="navCon"> -->
+            <div id="menu"><button id="btn-menu">Menu</button>
+                <div id="navbar" style="display: none;">
+                        <a href="#data-container">Data</a>
+                        <a href="#passion-container">Passion</a>
+                        <a href="#breath-container">Breath</a>
+                        <a href="#open-container">Talk</a>
+                </div> 
+            </div>
+        <!-- </div> -->
+
+<!--                   JavaScript Starts                     -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+///header bg words hover
+        $(".box").mouseenter(function(){
+            $(this).css("color", "white");
+        });
+        $(".box").mouseleave(function(){
+            $(this).css("color", "#ffb6c1");
+        });
+///data board hover 
+        $(".datas").mouseenter(function(){
+            $(this).css("z-index", "5");
+            $(this).css("transform", "scale(1.05)");
+            // var index = $(this).css("z-index");
+        });
+        $(".datas").mouseleave(function(){
+            $(this).css("z-index", "1");
+            $(this).css("transform", "scale(1)");
+        });
+///stopwatch boards HOVER
+        $(".breath-boards").mouseenter(function(){
+            $(this).css("z-index", "4");
+            $(this).css("transform", "scale(1.1)");
+            // var index = $(this).css("z-index");
+        });
+        $(".breath-boards").mouseleave(function(){
+            $(this).css("z-index", "1");
+            $(this).css("transform", "scale(1)");
+        });
+///stopwatch 1
+        var stopwatchRunning = false;
+		var stopwatchId;
+
+        document.querySelector("#start-btn-1").onclick = function(){
+            if (stopwatchRunning == false) {
+				stopwatchRunning = true;
+				// setInterval( callback, delay in ms );
+				stopwatchId = setInterval( function(){
+					var time = document.querySelector("#number1").innerHTML;
+					time = parseInt(time);
+					time = time + 1;
+					document.querySelector('#number1').innerHTML = time;
+				}, 1000 );
+			} 
+        }
+        document.querySelector("#stop-btn-1").onclick = function(){
+            stopStopwatch();
+        }
+
+        document.querySelector('#reset-btn-1').onclick = function(){
+			stopStopwatch();
+			document.querySelector('#number1').innerHTML = 0;
+		}
+		function stopStopwatch () {
+			if ( stopwatchRunning == true ) {
+				clearInterval( stopwatchId );
+				stopwatchRunning = false;
+			}
+		}
+///STOPWATCH 2
+        var stopwatchRunning2 = false;
+		var stopwatchId2;
+
+        document.querySelector("#start-btn-2").onclick = function(){
+            if (stopwatchRunning2 == false) {
+				stopwatchRunning2 = true;
+				// setInterval( callback, delay in ms );
+				stopwatchId2 = setInterval( function(){
+					var time = document.querySelector("#number2").innerHTML;
+					time = parseInt(time);
+					time = time + 1;
+					document.querySelector('#number2').innerHTML = time;
+				}, 1000 );
+			} 
+        }
+        document.querySelector("#stop-btn-2").onclick = function(){
+            stopStopwatch2();
+        }
+
+        document.querySelector('#reset-btn-2').onclick = function(){
+			stopStopwatch2();
+			document.querySelector('#number2').innerHTML = 0;
+		}
+		function stopStopwatch2 () {
+			if ( stopwatchRunning2 == true ) {
+				clearInterval( stopwatchId2 );
+				stopwatchRunning2 = false;
+			}
+		}
+
+///STOPWATCH 3
+        var stopwatchRunning3 = false;
+		var stopwatchId3;
+
+        document.querySelector("#start-btn-3").onclick = function(){
+            if (stopwatchRunning3 == false) {
+				stopwatchRunning3 = true;
+				// setInterval( callback, delay in ms );
+				stopwatchId3 = setInterval( function(){
+					var time = document.querySelector("#number3").innerHTML;
+					time = parseInt(time);
+					time = time + 1;
+					document.querySelector('#number3').innerHTML = time;
+				}, 1000 );
+			} 
+        }
+        document.querySelector("#stop-btn-3").onclick = function(){
+            stopStopwatch3();
+        }
+
+        document.querySelector('#reset-btn-3').onclick = function(){
+			stopStopwatch3();
+			document.querySelector('#number3').innerHTML = 0;
+		}
+		function stopStopwatch3 () {
+			if ( stopwatchRunning3 == true ) {
+				clearInterval( stopwatchId3 );
+				stopwatchRunning3 = false;
+			}
+		}
+///message board
+        document.querySelector("#delete").onclick = function(){
+            document.querySelector("tbody").innerHTML = " ";
+        }
+        document.querySelector("#stress-form").onsubmit = function(){
+            var stress = document.querySelector("#stress-item").value.trim();
+            if(stress.length > 0){
+                //create new elements
+                var tr = document.createElement("tr");
+                var td = document.createElement("td");
+
+                //Set text for <td> tag
+                td.innerHTML = stress;
+
+                //add <td> to <tr>
+                tr.appendChild(td);
+
+                //add <tr> to <tbody>
+                document.querySelector("tbody").appendChild(tr);
+
+                //clear user input
+                document.querySelector("#stress-item").value = " ";
+            }
+            return false;
+        }
+///message board hover OVERLAY (NOT WORKING)
+        $("#mapid").mouseenter(function(){
+            $("#mapid").css("z-index", "4");
+            $("#mapid").css("transform", "scale(1.01)");
+            // var index = $(this).css("z-index");
+        });
+        $("#mapid").mouseleave(function(){
+            $("#mapid").css("z-index", "1");
+            $("#mapid").css("transform", "scale(1)");
+        });
+///menu
+
+         $('#btn-menu').click(function(){
+			//  $(this).next().slideToggle();
+             $('#navbar').slideToggle();
+		 });
+        </script>
+
+
+        <script>
+            var mymap = L.map('mapid').setView([34.025520, -118.28937], 13);
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoiZGFpemh1d3UiLCJhIjoiY2p1dWd5OW51MGJjazQ0bGxwZm9wMHFxeiJ9.xu28m_s_c5eeLCH7Lr5bXA'
+            }).addTo(mymap);
+
+            var marker = L.marker([34.0224, -118.2581],{
+                color: "pink"
+            }).addTo(mymap);
+        </script>
+
+
+    </body>
+</html>

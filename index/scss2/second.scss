@@ -1,0 +1,187 @@
+////This css page is soly for creaing respsonsiveness$blue: #b0c4de;
+$orange: #ffa480;
+$pink: #FF667D;
+$lightpink: #ffb6c1;
+$grey: #888888;
+
+// //screen size for MOBILE
+// @media(max-width:767px){
+//     #title {
+//         margin-left: -70px;
+//     }
+//     //data 
+//     #data-box {
+//         width: 600px;
+//         height: 900px;
+//     }
+//     //marquee
+//     #overlay-passion {
+//         left: -100px;
+//         width: 600px;
+//     }
+    
+
+//screen size for TABLET
+@media(max-width: 992px){
+    header{
+        width: auto;
+    }
+    #title {
+        font-size: 110px;
+    }
+    ///data
+    #data-container {
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    #data-left{
+        width: 100%;
+        h3 {
+            left: 6%;
+        }
+    }
+    #data-right {
+        width: 60%;
+        font-size: 1.3em;
+    }
+    ///marquee
+    #passion-container {
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    #marquee-left {
+        @extend #data-left;
+        h3 {
+            margin: -50px;
+            margin-left: -10px;
+        }
+    }
+    #marquee-right {
+        font-size: 3.5em;
+    }
+    #overlay-passion {
+        top: 30%;
+        left: 10%;
+    }
+    .passionBox {
+        width: 320px;
+    }
+    ///breath
+    #breath-container {
+        flex-direction: column;
+        width: 900px;
+        height: 900px;
+    }
+    #breath-left {
+        h3 {
+            margin-left: 53px;
+        }
+    }
+    #breath-right {
+        margin-top: 62px;
+    }
+    #breath-header {
+        margin-left: 30px;
+    }
+    .breath-boards {
+        margin-top: 500px;
+    }
+    #breathin {
+        height: 77%;
+    }
+    #hold {
+        height: 100%;
+    }
+    #breathout {
+        height: 50%;
+    }
+    #deco1 {
+        top: 100%;
+        left: 37%;
+    }
+    #deco1-1 {
+        top:100%;
+        left: 37%;
+    }
+    //OPEN
+    #open-container {
+        flex-direction: column;
+        width: 900px;
+        height: 900px;
+        margin-top: 420px;
+    }
+    #open-right {
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+    .open-boards {
+        margin-top: 100px;
+    }
+    #msg2 {
+        height: 350px;
+        width: 250px;
+        margin-top: 200px;
+    }
+    #open-text {
+        height: 200px;
+        width: 200px;
+        top: -30px;
+    }
+    #text-overlay {
+        font-size: 1.2em;
+    }
+    #mapid {
+        height: 220px;
+        width: 350px;
+        top: 50px;
+    }
+    #deco2-1 {
+        top: 500px;
+        height: 70px;
+        width: 150px;
+    }
+    #deco2-2 {
+        top: 508px;
+        height: 70px;
+        width: 150px;
+        left: 393px;
+    }
+}
+//screen size for MOBILE
+@media(max-width:736px){
+    #title {
+        margin-left: -70px;
+    }
+    //data 
+    #data-box {
+        width: 600px;
+        height: 900px;
+    }
+    //marquee
+    #marquee-right {
+        font-size: 3em;
+
+    }
+    #overlay-passion {
+        left: 0px;
+        width: 600px;
+        height: 1000px;
+    }
+    //Breath
+    #breath-left h3{
+        margin-left: 45px;
+    }
+    #breath-header {
+        margin-left: 20px;
+    }
+    .breath-boards {
+        margin-top: 500px;
+    }
+    #open-container {
+        margin-top: 430px;
+    }
+    //open
+    #mapid {
+        width: 300px;
+    }
+}
